@@ -115,7 +115,7 @@ func listMenu(w http.ResponseWriter, r *http.Request) {
 
 func withCORS(next http.Handler) http.Handler {
     return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-        w.Header().Set("Access-Control-Allow-Origin", "http://localhost:5173")
+        w.Header().Set("Access-Control-Allow-Origin", "https://vigilant-umbrella-97w7jvx5g9x7hp69v-5173.app.github.dev")
         w.Header().Set("Access-Control-Allow-Methods",
             "GET, POST, PUT, PATCH, DELETE, OPTIONS")
         w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
